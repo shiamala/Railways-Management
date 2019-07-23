@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form action="Search" method="Post">
+<style>
+body{
+
+background-image: url("701648.jpg");
+background-size: cover;
+}
+	.search {
+  width: 360px;
+  height: 450px;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+	input{
+	font-family: sans-serif;
+   font-size: 15px;
+	
+	}
+</style>
+<div class="search">
+	<center>
+	<b>SOURCE:<br>
+	<select name="Source">
+	
+  <option value="Trichy">Trichy</option>
+  <option value="Chennai">Chennai</option>
+     <option value="Coimbatore">Coimbatore</option>
+  <option value="Bangalore">Bangalore</option>
+  <option value="Andhra">Andhra</option>
+</select><br>
+	
+	
+	
+	
+<br>DESTINATION:<br>
+<select name="Destination">
+	
+  <option value="Trichy">Trichy</option>
+  <option value="Chennai">Chennai</option>
+     <option value="Coimbatore">Coimbatore</option>
+  <option value="Bangalore">Bangalore</option>
+  <option value="Andhra">Andhra</option>
+</select><br>
+
+<br>DATE:<br>
+<input type="date" name="Date"><br>
+
+<br><button type="submit" formaction="Search"  class="btn btn-info"><span class="glyphicon glyphicon-search"></span>Find Trains</button><br>
+<br><a href=Login.html>Go Back</a>
+</center>
+</div>	
+</form>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body{
+background-image: url("347731.jpg");
+background-size: cover;
+} 
+	
+	.login-box {
+  width: 360px;
+  height: 450px;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.login-box h1 {
+  margin: 0 ;
+  padding: 0 0 20px;
+  text-align: center;
+  font-family: sans-serif;
+  color:white;
+  font-size: 29px;
+}
+.login-box label {
+  margin: 0;
+  padding: 0;
+   font-family: sans-serif;
+   font-size: 15px;
+  font-weight: bold;
+  display: block;
+  }
+.login-box input[type="text"],.login-box input[type="password"] {
+  border: darkblue;
+  border-bottom: 1px ;
+ 
+ background: transparent;
+  
+  height: 30px;
+  color: white;
+  font-size: 15px;
+}
+.login-box input[type="checkbox"]{
+	text-align: center;
+	color: blue;
+}
+ 
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: white;
+  color: black;
+  font-size: 18px;
+  
+}
+ 
+ 
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+::placeholder{
+color:white;
+}
+a{
+
+color:white;
+}
+
+</style>
+<body>
+
+<script>  
+function validateemail()  
+{  
+var x=document.myform.Emailid.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address ");  
+  return false;  
+  }  
+}  
+</script>  
+<div class="login-box">
+	<form name="myform" action="PassengerRegister" method="post" onsubmit="return validateemail();">
+	<center>
+	<h1>Register to Login</h1>
+	<br>
+
+	<input type="text" name="Username" style="border:1px solid white" placeholder="Enter Username" ><br>
+	<br><br>
+	<input type="text" name="Emailid" style="border:1px solid white" placeholder="Enter Emailid" ><br>
+	<br><br>
+	<input type="password" name="Password" style="border:1px solid white" placeholder="Enter Password"><br>
+	<br><input type="submit" value="SignUp"> 
+	<a href="Login.html">Go to Login</a>
+	</center>
+	</form>
+	</div>
+</body>
+</html>

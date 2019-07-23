@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<style>
+body{
+background-color:black;
+background-image:url("887674.jpg");
+ background-repeat:no-repeat;
+   background-size: cover;
+   background-position:center;
+   height: 100%; 
+}
+a{
+color:white;
+}
+</style>
+<center>
+<form action="Admin" method="Get">
+	<h1><b><font color="White">WELCOME TO ADMIN PAGE</font></b></h1>
+  	<nav class="navbar navbar-expand-sm bg-light navbar-light">
+
+  <!-- Links -->
+  <ul class="nav nav-pills nav-justified">
+  <li class="nav-item">
+      <button type ="submit" formaction="Railways.html" class="btn btn-link"><b>Home</b></button>
+  </li>
+    <li class="nav-item ">
+      <button type ="submit" formaction="Insert" class="btn btn-link"><b>Insert</b></button>
+    </li>
+    <li class="nav-item">
+		<button type ="submit" formaction="Update" class="btn btn-link"><b>Update</b></button>    
+		</li>
+    <li class="nav-item">
+		<button type ="submit" formaction="Delete" class="btn btn-link"><b>Delete</b></button>    
+		</li>
+    <li class="nav-item">
+      <button type ="submit" formaction="BookList.jsp" class="btn btn-link"><b> BookingList</b></button>
+    </li>
+    <li class="nav-item">
+      <button type ="submit" formaction="DisplayBookedList" class="btn btn-link"><b>BookedNames</b></button>
+    </li>
+    
+  </ul>
+
+</nav>
+	<font color="white" ><b>Train No: <br>
+	<input type="text" name="TrainNo" placeholder="Enter Train No"><br>
+<br>Train Name:<br>
+<input type="text" name="TrainName" placeholder="Enter Train Name"><br>
+<br>Source:<br><select name="Source">
+ <option value=""></option>
+	 <option value="Trichy">Trichy</option>
+  <option value="Chennai">Chennai</option>
+   <option value="Coimbatore">Coimbatore</option>
+  <option value="Bangalore">Bangalore</option>
+  <option value="Andhra">Andhra</option>
+</select><br>
+
+<br>Destination:<br>
+<select name="Destination">
+<option value=""></option>
+	 <option value="Trichy">Trichy</option>
+  <option value="Chennai">Chennai</option>
+     <option value="Coimbatore">Coimbatore</option>
+  
+  <option value="Bangalore">Bangalore</option>
+  <option value="Andhra">Andhra</option>
+</select><br>
+<br>Departure:<br>
+<input type="time" name="Departure" placeholder="Enter Departure Time"><br>
+<br>Arrival:<br>
+<input type="time" name="Arrival" placeholder="Enter Arrival Time"><br>
+<br>Date:<br>
+<input type="date" name="Date" placeholder="Enter Date"></font><br>
+
+ 
+<!--  <br><button type ="submit" formaction="Insert">Insert</button><br>
+	<br><button type ="submit" formaction="Update">Update</button><br>
+	<br><button type ="submit" formaction="Delete">Delete</button><br>
+	<br><button type ="submit" formaction="BookList.jsp">BookingList</button><br>
+	<br><button type ="submit" formaction="DisplayBookedList">BookedNames</button><br>-->
+	
+	</form>
+</center>
+</body>
+</html>
